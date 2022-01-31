@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device/xiaomi/lava" name="Redmi-MT6768/android_device_xiaomi_lava.git" remote="github" revision="lineage-19.0" />
+ <project path="device/xiaomi/mt6768-common" name="Redmi-MT6768/android_device_xiaomi_mt6768-common.git" remote="github" revision="lineage-19.0" />
+ <project path="vendor/xiaomi/lava" name="Redmi-MT6768/android_vendor_xiaomi_lava.git" remote="github" revision="twelve" />
+ <project path="kernel/xiaomi/mt6768" name="Redmi-MT6768/android_kernel_xiaomi_mt6768" remote="github" revision="twelve" />
+ <project path="vendor/xiaomi/mt6768-ims" name="Redmi-MT6768/android_vendor_xiaomi_mt6768" remote="github" revision="twelve" />
+ git fetch https://github.com/AOSP-12-RMX2020/packages_modules_Wifi
+ git cherry-pick 90fc3f6781171dc27fed16b60575f9ea62f02e7a
+ git cherry-pick ead44b767363bd76a85c8ec4f0c54ecd2030f55b
+ git fetch  https://github.com/AOSP-12-RMX2020/frameworks_opt_net_ims
+ git cherry-pick 3fe1cb7b6b2673adfce2b9232dfaf81375398efb
+ git fetch https://github.com/AOSP-12-RMX2020/frameworks_opt_telephony
+ git cherry-pick e84e0dfb237fc3ed0879e23a0ea9f4acae218856
+
+</manifest>
